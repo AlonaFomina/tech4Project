@@ -1,0 +1,7 @@
+package utilities;
+
+public class RunderNumberGener {
+    public static int getRandomNumber(int start, int end){
+        return (int)(Math.random()*(end - start + 1)) + start;
+    }
+}
