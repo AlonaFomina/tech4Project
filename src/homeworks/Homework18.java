@@ -49,24 +49,11 @@ public class Homework18 {
     }
 
     public static String[] noA(String[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].toLowerCase().startsWith("a")) {
-                int size = arr[i].length();
-                arr[i] = "";
-                for (int j = 0; j < size; j++) arr[i] += "#";
-            }
-        }
+        for (int i = 0; i < arr.length; i++) if (arr[i].toLowerCase().startsWith("a")) arr[i] = "###";
         return arr;
     }
 
-    /*
-    Create a method called no3or5()
--This method will take an int array argument and it will
-return a new array with some elements replaced as below
-If element can be divided by 5, replace it with 99
-If element can be divided by 3, replace it with 100
-If el
-     */
+
     public static int[] no3or5(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if(arr[i]%15 == 0) arr[i] = 101;
