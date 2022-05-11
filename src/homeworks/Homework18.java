@@ -71,6 +71,35 @@ public class Homework18 {
         return arr;
     }
 
+    /*
+    -Create a method called countPrimes()
+-This method will take an int array argument and it will return
+how many elements in the array are prime numbers
+NOTE: Prime number is a number that can be divided only by 1
+and itself
+NOTE: Negative numbers cannot be prime
+Examples: 2,3,5,7,11,13,17,19,23,29,31,37 etc.
+NOTE: Smallest prime number is 2
+Test Data 1: [-10, -3, 0, 1]
+Expected Result 1: 0
+Test Data 2: [7, 4, 11, 23, 17]
+Expected Result 2: 4
+Test Data 3: [41, 53, 19, 47, 67]
+     */
+    public static int countPrimes(int[] arr){
+        int c = 0;
+        for (int num : arr) {
+            if (num < 2) continue;
+            boolean isPrime = true;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) isPrime = false;
+                break;
+            }
+            if (isPrime) c++;
+        }
+        return c;
+    }
+
     public static void main(String[] args) {
         System.out.println(noSpace(" Hello World   "));
         System.out.println(replaceFirstLast("   AB      "));
