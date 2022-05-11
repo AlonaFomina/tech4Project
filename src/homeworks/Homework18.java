@@ -13,11 +13,19 @@ public class Homework18 {
 
     public static String replaceFirstLast(String str) {
         String s = "";
-        for (int i = 1; i <= str.length() - 2; i++) {
-            s += str.charAt(i);
-        }
-        return str.charAt(str.length() - 1) + s + str.charAt(0);
+        str = str.trim();
+
+        if(str.length()<2)return "";
+        else
+            for (int i = 1; i < str.length() - 1; i++) {
+                s += str.charAt(i);
+            }
+            str = str.charAt(str.length() - 1) + s + str.charAt(0);
+
+        return str;
     }
+
+
 
 
     public static boolean hasVowel(String str) {
@@ -65,7 +73,7 @@ public class Homework18 {
 
     public static void main(String[] args) {
         System.out.println(noSpace(" Hello World   "));
-        System.out.println(replaceFirstLast("hello"));
+        System.out.println(replaceFirstLast("   AB      "));
         System.out.println(hasVowel("java"));
         checkAge(1994);
         System.out.println(averageOfEdges(0, 0, 6));
