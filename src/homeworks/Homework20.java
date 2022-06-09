@@ -56,8 +56,7 @@ public class Homework20 {
     }
 
     public static String removeStringSpecialsDigits(String str) {
-        String s = str.replaceAll("[^A-Za-z]", " ");
-        return s.trim().replaceAll("\\s+", " ");
+        return str.trim().replaceAll("[^A-Za-z\\s]", "");
     }
 
     public static String[] removeArraySpecialsDigits(String[] arr) {
