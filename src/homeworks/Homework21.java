@@ -63,6 +63,5 @@ public class Homework21 {
         System.out.println(findBiggestNumber("ab110c045d"));
         System.out.println(countSequenceOfCharacters("abd"));
         System.out.println(countSequenceOfCharacters("abcabs"));
-
     }
 }
