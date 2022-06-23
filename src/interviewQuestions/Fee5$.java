@@ -1,8 +1,6 @@
 package interviewQuestions;
 
-import java.util.Arrays;
-
-public class fee5$ {
+public class Fee5$ {
     /*
     > Every month 5$ fee.
     -> At the same time when you have 3 payments in a month AND if the payment is equal to or more than 100 you don’t get the fee for that month.
